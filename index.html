@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant yang memfokuskan pada menu pizza">
+    <meta name="keyword" content="rumah pizza, pizza enak, tempat nyaman untuk ngobrol">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="icon" href="asset/logo_rumah_pizza.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <title>Rumah Pizza</title>
+    
+</head>
+<body>
+
+    <!--Navbar-->
+    <header class="navbar-container">
+        <div class="logo">
+          <img src="asset/logo_rumah_pizza.png" alt="">
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Home-->
+
+      <section id="home">
+          <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="asset/sample_image/sample1.jpg" alt="Los Angeles" class="d-block w-100">
+      <div class="carousel-caption">
+        <div class="logo-banner">
+          <img src="asset/logo_rumah_pizza.png" alt="">
+        </div>
+        <h3>RUMAH PIZZA</h3>
+        <p>Tempat Kita Bersua & Bercerita</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="asset/sample_image/sample2.jpg" alt="Chicago" class="d-block w-100">
+      <div class="carousel-caption">
+        <div class="logo-banner">
+          <img src="asset/logo_rumah_pizza.png" alt="">
+        </div>
+        <h3>RUMAH PIZZA</h3>
+        <p>Tempat Kita Bersua & Bercerita</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="asset/sample_image/sample4.jpg" alt="New York" class="d-block w-100">
+       <div class="carousel-caption">
+        <div class="logo-banner">
+          <img src="asset/logo_rumah_pizza.png" alt="">
+        </div>
+        <h3>RUMAH PIZZA</h3>
+        <p>Tempat Kita Bersua & Bercerita</p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  
+</div>
+
+
+<div class="resume" >
+   <div class="foto-resume">
+    <a href="#menu"><img src="asset/sample_image/sample1.jpg" alt="">Menu</a>
+    <a href="#tentang"><img src="asset/sample_image/sample2.jpg" alt="">Tentang</a>
+    <a href="#kontak"><img src="asset/sample_image/sample3.jpg" alt="">Kontak</a>
+   </div>
+  </div>
+
+
+ </section>
+
+ <br><br><br><br><br>
+
+<!--MEEEENUUUUUUU-->
+
+<!--MAKANANN-->
+ <section id="menu">
+  <div class="container-menu">
+    <h1 class="text-center section-heading">MENU</h1>
+    <h2 class="text-center section-subheading">Makanan</h2>
+  </div>
+  <div class="container-menu">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Menu Utama/big burger.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$20</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Big Burger
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Menu Utama/fried chicken.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$20</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Fried Chicken
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Menu Utama/mushroom pizza.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$40</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Mushroom Pizza
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Menu Utama/pepperoni pizza.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$15</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Pepperoni Pizza
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Menu Utama/small burger.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$15</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Small Burger
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--MINUMAN-->
+  <div class="container-menu">
+    <h2 class="text-center section-subheading">Minuman</h2>
+  </div>
+  <div class="container-menu">
+    <div class="swiper tranding-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Minuman/es teh.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$10</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Es Teh
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Minuman/ice coffee.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$10</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Ice Coffee
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Minuman/soda gembira.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$40</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Soda Gembira
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Minuman/ice cola.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$15</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Ice Cola
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+        <!-- Slide-start -->
+        <div class="swiper-slide tranding-slide">
+          <div class="tranding-slide-img">
+            <img src="asset/Minuman/lemon tea.jpg" alt="Tranding">
+          </div>
+          <div class="tranding-slide-content">
+            <h1 class="food-price">$15</h1>
+            <div class="tranding-slide-content-bottom">
+              <h2 class="food-name">
+                Lemon Tea
+              </h2>
+              <h3 class="food-rating">
+                <span>4.5</span>
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Slide-end -->
+
+      </div>
+
+    </div>
+  </div>
+ </section>      
+
+
+<section id="tentang">
+    <div class="content">
+        <h1>Tentang Kami</h1>
+        <h2>Profil</h2>
+        <p>Restoran Rumah Pizza adalah tempat makan yang menyediakan berbagai jenis pizza yang lezat dan kreatif.
+           Kami menyajikan berbagai macam rasa dan topping yang disajikan dengan berbagai jenis adonan,
+          mulai dari adonan klasik hingga yang lebih inovatif.</p>
+
+        <p>Rumah Pizza telah menjadi tempat favorit bagi banyak orang.
+           Berbagai hidangan kami dikenal akan cita rasanya yang unik dan suasana santai yang nyaman.</p>
+
+           <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=P4rqKHKdqWtUQzE5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <aside>
+        <h2>Apa Kata Pelanggan Kami?</h2>
+        <div class="testimonial">
+            <p><strong>Sari, Jakarta</strong></p>
+            <p>"Pelayanan di sini luar biasa! Tidak hanya produk yang berkualitas, tapi juga support pelanggan yang selalu cepat tanggap. Sangat direkomendasikan!"</p>
+        </div>
+
+        <div class="testimonial">
+            <p><strong>Budi, Bandung</strong></p>
+            <p>"Saya selalu puas berbelanja di sini. Dari kualitas hingga harga sangat bersaing. Timnya ramah dan selalu siap membantu kapan saja!"</p>
+        </div>
+
+        <div class="testimonial">
+            <p><strong>Dewi, Surabaya</strong></p>
+            <p>"Layanan cepat, barang sesuai ekspektasi, dan pengiriman tepat waktu! Benar-benar pengalaman belanja yang memuaskan. Terima kasih!"</p>
+        </div>
+  </aside>
+</section>
+
+<br><br><br><br><br>
+
+<section id="kontak">
+  <div class="contact-container">
+    <!-- Kolom 1 -->
+    <div class="kolom1">
+        <!-- Baris 1: Judul dan Alamat -->
+        <div class="baris1">
+            <h2>Rumah Pizza</h2>
+            <p>Jl. Makan Pizza No. 123, Kota Pizza</p>
+        </div>
+        
+        <!-- Baris 2: Nomor Telepon -->
+        <div class="baris2">
+            <p>Telepon: (021) 1234-5678</p>
+        </div>
+        
+        <!-- Baris 3: Media Sosial -->
+        <div class="baris3">
+            <p>Ikuti kami di media sosial:</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fab fa-facebook"></i> Rumah Pizza
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="fab fa-instagram"></i> @RumahPizza
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                  <i class="fab fa-youtube"></i> Rumah Pizza
+                </a>
+            </div>
+        </div>
+        
+        <!-- Baris 4: Subscribe Newsletter -->
+        <div class="baris4">
+            <p class="subscribe-text">Subscribe newsletter kami untuk tetap terupdate</p>
+        </div>
+        
+        <!-- Baris 5: Form Subscribe -->
+        <div class="baris5">
+            <form action="#" method="post">
+                <input type="email" placeholder="Masukkan email" class="email-input">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Kolom 2: Peta -->
+    <div class="kolom2">
+        <h3>Lokasi Rumah Pizza</h3>
+        <iframe 
+            src=
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9187369721!2d-122.08385148469257!3d37.42199997982512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbf28e6fdac9b%3A0x110a1d5f2ef3e72a!2sGoogleplex!5e0!3m2!1sen!2sid!4v1616165434345!5m2!1sen!2sid" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+</section>
+
+<footer>
+  <p> ©Copyright 11 | 2024</p>
+</footer>
+  
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+
+    
+</body>
+</html>

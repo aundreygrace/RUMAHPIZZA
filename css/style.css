@@ -1,0 +1,661 @@
+:root {
+    --warna-5: #FABC3F;
+    --warna-6: #E85C0D;
+    --warna-7: #C7253E;
+    --warna-8: #821131;
+
+    --warna-bg: #ffffff;
+
+  --font-1: Helvetica;
+  --font-2: Arial;
+  --font-3: Verdana;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--warna-bg);
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+
+ .navbar-container {
+    position: fixed;
+    height: 96px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    
+  }
+
+  header.navbar-container .logo img {
+    height: 75px;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+    padding-right: 20px;
+  }
+
+  header.navbar-container .nav-list li {
+    list-style-type: none;
+  }
+
+  header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--warna-5);
+    transition: all 0.2s ease-in-out;
+    padding-right: 20px;
+    font-family: var(--font-1);
+    
+  }
+
+  header.navbar-container .nav-list li:hover a {
+    background-color: var(--warna-6);
+    color: var(--warna-5);
+  }
+
+  .carousel-inner img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .carousel-item {
+    height: auto;
+    min-height: 200px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 24pt;
+    font-family: var(--font-2);
+    color: var(--warna-5);
+    font-weight: 700;
+  }
+  
+  .carousel-caption {
+    margin-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+   
+  }
+  
+  .carousel-caption p {
+    font-size: 16pt;
+    font-family: var(--font-2);
+  }
+  
+  
+  .logo-banner {
+    padding-bottom: 50px;
+    padding-left: 250px;
+    width: 30rem;
+    height: auto;
+  }
+
+
+
+
+  /* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+      font-size: 1.5rem; /* Smaller text on small screens */
+  }
+  .carousel-caption p {
+      font-size: 1rem; /* Smaller text on small screens */
+  }
+  .carousel-inner img {
+      height: auto; /* Allow height to adjust based on aspect ratio */
+      
+  }
+}
+
+/* Optional: Adjust Carousel Item Height */
+.carousel-item {
+  height: auto; /* Ensure a minimum height for smaller screens */
+}
+
+/* Adjust padding for carousel captions */
+@media (max-width: 480px) {
+  .carousel-caption {
+      padding: 0 5%; /* Less padding on very small screens */
+  }
+}
+
+
+
+
+  .resume {
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-around;
+  }
+
+  .foto-resume {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foto-resume img {
+    width: 85%;
+    height: 210px;
+    margin-top: 50px;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .foto-resume a {
+    text-decoration: none;
+    color: var(--warna-6);
+    font-weight: 600;
+    font-size: x-large;
+    
+  }
+
+  ::-webkit-scrollbar {
+    width: 1.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--warna-bg);
+  }
+  
+  .container-menu {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-family: var(--font-3);
+    color: var(--warna-7);
+    font-weight: 600;
+  }
+
+  .section-subheading {
+    font-family: var(--font-2);
+    font-size: 3rem;
+    color: var(--warna-5);
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+  
+  #menu {
+    padding: 0.5 0;
+  }
+
+    #menu {
+      padding: 2rem 0;
+    }
+
+  
+  #menu .tranding-slider {
+    height: 45rem;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+    #menu .tranding-slider {
+      height: 45rem;
+    }
+  
+  .tranding-slide {
+    width: 30rem;
+    height: 35rem;
+    position: relative;
+  }
+  
+    .tranding-slide {
+      width: 20rem !important;
+      height: 25rem !important;
+    }
+    .tranding-slide .tranding-slide-img img {
+      width: 20rem !important;
+      height: 25rem !important;
+    }
+  
+  .tranding-slide .tranding-slide-img img {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  
+  .tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .tranding-slide-content .food-price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--warna-bg);
+  }
+  
+  .tranding-slide-content .tranding-slide-content-bottom {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: var(--warna-bg);
+  }
+  
+  .food-rating {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .rating ion-icon {
+    color: var(--warna-6);
+  }
+  
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    display: none;
+  }
+  
+  #tentang {
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#tentang .content {
+    flex: 5; /* Konten mendapatkan proporsi 3 kali lebih besar */
+    padding-right: 20px;
+    text-align: center;
+}
+
+#tentang .content h1 {
+  font-size: 16pt;
+}
+
+#tentang .content h2 {
+ font-size: 14pt;
+}
+
+#tentang .content p {
+  font-size: 12pt;
+}
+
+aside {
+  flex: 1;
+  background-color: #fff;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.testimonial p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.testimonial strong {
+    color: #333;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    #tentang {
+        flex-direction: column;
+    }
+
+    .content, .sidebar {
+        flex: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
+.video-container {
+  position: relative;
+  width: 50%; /* Lebar maksimal 50% dari layar */
+  padding-bottom: 28.125%; /* Rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto; /* Agar video terpusat */
+  background-color: #000; /* Latar belakang hitam sebelum video dimuat */
+  border-radius: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+.kolom1 {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.kolom2 {
+  flex: 1.5;
+  padding-left: 20px;
+}
+
+/* Baris 1: Judul dan Alamat */
+.baris1 h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.baris1 p {
+  margin: 5px 0 20px 0;
+  color: #666;
+}
+
+/* Baris 2: Nomor Telepon */
+.baris2 p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Baris 3: Media Sosial */
+.baris3 p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-media .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Baris 4: Subscribe Text */
+.baris4 .subscribe-text {
+  font-size: 12pt;
+  color: var(--warna-6); 
+  margin-bottom: 10px;
+}
+
+/* Baris 5: Form Subscribe */
+.baris5 form {
+  display: flex;
+  align-items: center;
+}
+
+.email-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  background-color: #ff4500; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.subscribe-btn:hover {
+  background-color: #e63e00; 
+}
+
+/* Kolom 2: Peta */
+.kolom2 h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.kolom2 iframe {
+  max-width: 100%;
+  height: 300px;
+  border: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .kolom1, .kolom2 {
+      padding: 0;
+      width: 100%;
+  }
+
+  .kolom2 iframe {
+      width: 100%;
+      height: 250px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #c4bfbf;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  padding-top: 20px;
+  font-size: 13pt;
+  color: #000;
+  font-family: var(--font-2);
+  font-weight: 600;
+}
+
+
+
+/* Untuk tablet (layar sedang) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar-container, .logo, .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+/* Untuk layar ponsel */
+@media (max-width: 500px) {
+  .navbar-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .carousel-caption h3, .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  .resume .foto-resume a img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .container-menu {
+    padding: 20px 10px;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  /* Kontak bagian subscribe */
+  .email-input, .subscribe-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Untuk kolom-kolom dalam section kontak */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .kolom1, .kolom2 {
+    width: 100%;
+  }
+
+  .carousel-item {
+    height: auto; /* Ensure a minimum height for smaller screens */
+    min-height: 30vh;
+    padding-top: 7rem;
+  }
+
+  .carousel-inner img {
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    min-height: 30vh;
+}
+}
+
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.5rem; /* Smaller text on small screens */
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .carousel-caption .logo-banner img {
+    width: 50px; /* Smaller logo */
+  }
+}
+
+/* Resume Responsive Styles */
+.resume {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adds space between items */
+}
+
+.foto-resume a {
+  display: block;
+  text-align: center;
+  width: 100%; /* Ensures images span full width */
+}
+
+.foto-resume img {
+  max-width: 100%;
+  height: auto; /* Keeps images proportional */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  .foto-resume img {
+    max-width: 100%; /* Adjusts for smaller screens */
+  }
+}
